@@ -2,11 +2,18 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("<h1>Это мой первый проект на Django</h1>")
+    datas = {
+        'title': 'EuroDjango',
+    }
+    return render(request, 'main/index.html', datas)
 
 def data(request):
-    return HttpResponse("<h1>Это вторая страница моего проекта на Django</h1>")
+    return render(request, 'main/data.html')
 
-def test(request):
-    return HttpResponse("<h1>Это третья страница моего проекта на Django</h1>")
-# Create your views here.
+def page3(request):
+    return render(request, 'main/page3.html')
+
+def page4(request):
+    return render(request, 'main/page4.html')
+
+
