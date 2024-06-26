@@ -21,8 +21,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'news',
-    'main',
+    'films',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +40,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ZeroCoder.urls'
+ROOT_URLCONF = 'movie_project.urls'
 
 TEMPLATES = [
     {
@@ -59,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ZeroCoder.wsgi.application'
+WSGI_APPLICATION = 'movie_project.wsgi.application'
 
 
 # Database
